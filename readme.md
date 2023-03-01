@@ -68,3 +68,27 @@ https://user-images.githubusercontent.com/118204748/222240589-c2411986-2196-46fc
 <br>
 
 - you can change your profile picture and your name by clicking in your avatar. 
+
+<br>
+
+## Technologies & Libraries used:
+
+`React`
+
+`Javascript`
+
+`HTML`
+
+`Create React App`
+
+`React Router`
+
+`Material UI`
+
+`Styled Components`
+
+`Git & GitHub`
+
+<hr>
+
+### Feel free to comment, give your opinion and suggestions.
