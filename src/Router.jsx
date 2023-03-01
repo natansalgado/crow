@@ -6,8 +6,7 @@ export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='*' element={<p>Esta rota não existe!</p>} />
+        <Route path='/crow' element={<Home />} />
       </Routes>
     </BrowserRouter>
   )
