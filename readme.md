@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/118204748/222226322-f1f3c793-dcd8-4d60
 
 <br>
 
-- click on the heart to like and unlike the posts.
+- click on the heart to like or unlike the posts.
 
 <br>
 
@@ -38,12 +38,12 @@ https://user-images.githubusercontent.com/118204748/222235555-db6ce4c8-c666-42a8
 
 <br>
 
-- open and close the comments area.
-- like the comments
+- open or close the comments area.
+- like or unlike the comments
 
 <br>
 
-## Comment a text or a image:
+## Comment with a text or an image:
 https://user-images.githubusercontent.com/118204748/222238091-d1cb1a19-2d5b-403e-909a-5c72db807dd2.mp4
 
 <br>
