@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/crow/static/js/main.c089dde0.js",
+    "main.js": "/crow/static/js/main.3cb1d3fe.js",
     "index.html": "/crow/index.html",
-    "main.c089dde0.js.map": "/crow/static/js/main.c089dde0.js.map"
+    "main.3cb1d3fe.js.map": "/crow/static/js/main.3cb1d3fe.js.map"
   },
   "entrypoints": [
-    "static/js/main.c089dde0.js"
+    "static/js/main.3cb1d3fe.js"
   ]
 }
