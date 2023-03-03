@@ -19,7 +19,6 @@ export const Home = () => {
   const [userAvatar, setUserAvatar] = useState(null)
 
   const [userCommentPost, setCommentUserPost] = useState('')
-  const [filteredPosts, setFilteredPosts] = useState([])
   const [commentImage, setCommentImage] = useState(null)
   const [comments, setComments] = useState(commentsAPI)
   const [posts, setPosts] = useState(postsAPI)
@@ -92,17 +91,16 @@ export const Home = () => {
     setComments(prevComments => [newComment, ...prevComments])
   }
 
-  useEffect(() => {
-    const filteredPosts = posts.filter(post => {
+
+  const filteredPosts = search.length > 0
+    ? posts.filter(post => {
       const content = post.content.toLowerCase().includes(search.toLowerCase())
       const name = post.name.toLowerCase().includes(search.toLowerCase())
       return content || name
     })
-    setFilteredPosts(filteredPosts)
-  }, [search, posts])
+    : []
 
   useEffect(() => {
-    setFilteredPosts(posts)
     setSearch('')
   }, [posts])
 
@@ -125,7 +123,7 @@ export const Home = () => {
       />
       <Box className='time-line'>
         {
-          filteredPosts.length > 0 ?
+          search.length > 0 ?
             filteredPosts.map(post =>
               <Publication
                 key={post.id}
@@ -167,7 +165,46 @@ export const Home = () => {
               </Publication>
             )
             :
-            <p className='not-found'>Nenhum resultado encontrado...</p>
+            posts.map(post =>
+              <Publication
+                key={post.id}
+                id={post.id}
+                avatar={post.avatar}
+                name={post.name}
+                post={post.content}
+                date={post.date}
+                image={post.image}
+                liked={post.liked}
+                feed={post.feed}
+                length={comments.filter(e => e.post === post.id)}
+              >
+                <NewComment
+                  id={post.id}
+                  onImageChange={handleCommentImageUpload}
+                  post={userCommentPost}
+                  onChange={handleNewCommentPost}
+                  onClick={handleCommentSubmit}
+                  propUserAvatar={userAvatar}
+                />
+                {
+                  comments.map(comment =>
+                    comment.post === post.id &&
+                    < Comment
+                      key={`${comment.id}-${comment.post}`}
+                      id={comment.id}
+                      postNumber={comment.post}
+                      avatar={comment.avatar}
+                      name={comment.name}
+                      post={comment.content}
+                      date={comment.date}
+                      image={comment.image}
+                      liked={comment.liked}
+                      feed={comment.feed}
+                    />
+                  )
+                }
+              </Publication>
+            )
         }
       </Box>
     </>

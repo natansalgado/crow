@@ -13,7 +13,7 @@ export const postsAPI = [
     id: 1,
     name: "Gabriel Almeida",
     avatar: 'http://picsum.photos/id/23/400',
-    content: "E aí pessoal, acabei de assistir a última temporada de Stranger Things e queria compartilhar minha opinião com vocês.\nPara mim, foi uma grande surpresa e aqui está o porquê.",
+    content: "Acabei de assistir a última temporada de Stranger Things e queria compartilhar minha opinião com vocês.\nPara mim, foi uma grande surpresa e aqui está o porquê.",
     image: null,
     date: 1677087600,
     liked: false,
