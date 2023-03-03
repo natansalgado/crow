@@ -88,6 +88,8 @@ https://user-images.githubusercontent.com/118204748/222240589-c2411986-2196-46fc
 
 `Styled Components`
 
+`React Icons`
+
 `Git & GitHub`
 
 <hr>
