@@ -1,5 +1,5 @@
 # About Crow
-![crow screenshot](https://cdn.discordapp.com/attachments/864529921447690242/1080530659522658407/crow-screenshot.png)
+![crow-screenshot](https://github.com/natansalgado/crow/assets/118204748/0c2ee07e-4872-4366-819f-37892302df04)
 
 Crow is a social media application based on Twitter made by using ReactJS
 ### [CLICK TO TEST](https://natansalgado.github.io/crow/)
